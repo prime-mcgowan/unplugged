@@ -92,12 +92,16 @@ html {
 }
 
 body {
+  color: #e2e3ed;
   font-family: "Open Sans", sans-serif;
   font-size: 1em;
 }
 
 ul,
 ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -107,16 +111,18 @@ a {
 
 h2 {
   font-family: "Poppins", sans-serif;
-  font-size: 0.8em;
+  font-size: 1.8em;
 }
 
 h3,
 h4 {
   font-family: "Poppins", sans-serif;
-  font-size: 0.6em;
+  font-size: 1.1em;
 }
 
 p {
+  font-size: 0.9em;
+  line-height: 1.2;
 }
 
 img {
@@ -126,6 +132,7 @@ figure {
 }
 
 address {
+  font-style: normal;
 }
 
 .content-wrapper {
@@ -171,6 +178,7 @@ footer {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  background-color: #202322;
 }
 
 footer p {
@@ -213,8 +221,35 @@ footer .copyright {
 /* Aside */
 
 aside {
+  background-color: #527158;
   display: flex;
   justify-content: center;
+}
+
+aside .form {
+  margin-top: 30px;
+}
+
+input[type="text"] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+
+input[type="button"] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /* Features */
@@ -247,6 +282,7 @@ aside {
 /* Reviews */
 
 .reviews {
+  background-color: #2a423a;
   display: flex;
   justify-content: center;
 }
