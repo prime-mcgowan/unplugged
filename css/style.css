@@ -84,8 +84,52 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* General Styles */
+
+/* 1em = 16px */
+html {
+  font-size: 1rem;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+}
+
+ul,
+ol {
+}
+
+a {
+  color: #e2e3ed;
+  text-decoration: none;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8em;
+}
+
+h3,
+h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.6em;
+}
+
+p {
+}
+
+img {
+}
+
+figure {
+}
+
+address {
+}
+
 .content-wrapper {
-  outline: 3px dotted red;
+  /* outline: 3px dotted red; */
   width: 90%;
   margin: 50px 0;
 }
@@ -338,6 +382,11 @@ aside {
    Modify as content requires.
    ========================================================================== */
 
+/* ====================================================
+   AUTHOR MEDIA QUERIES 
+   ==================================================== */
+
+/* ======== TABLET  ======== */
 @media only screen and (min-width: 768px) {
   /* Tablet styles here */
 
@@ -349,7 +398,6 @@ aside {
 }
 
 /* Header */
-
 header {
   padding: 33px 0;
 }
@@ -374,7 +422,6 @@ header nav ul {
 /* Hero area */
 
 /* Aside */
-
 aside .content-wrapper {
   margin: 50px 0;
   display: flex;
@@ -389,7 +436,6 @@ aside .content-wrapper .form {
 }
 
 /* Features */
-
 .features article {
   display: flex;
   align-items: center;
@@ -402,7 +448,6 @@ aside .content-wrapper .form {
 }
 
 /* Reviews */
-
 .reviews article {
   display: flex;
   justify-content: space-between;
@@ -413,7 +458,6 @@ aside .content-wrapper .form {
 }
 
 /* Footer */
-
 footer .content-wrapper {
   width: 65%;
 }
@@ -433,7 +477,6 @@ footer .copyright {
 }
 
 /* About */
-
 .misston-content {
   display: flex;
   justify-content: space-between;
@@ -456,7 +499,6 @@ footer .copyright {
 }
 
 /* FAQ */
-
 .faq .content-wrapper {
   display: flex;
   justify-content: space-between;
@@ -470,8 +512,62 @@ footer .copyright {
   width: 100%;
 }
 
+/* ======== Desktop ======== */
+/* Desktop styles here */
 @media only screen and (min-width: 1200px) {
   /* Desktop styles here */
+
+  /* General styles */
+
+  .content-wrapper {
+    max-width: 960px;
+  }
+
+  /* Header */
+  header {
+    padding: 15px 0;
+  }
+
+  /* Hero */
+  .hero-area h1 {
+    width: 80%;
+  }
+
+  /* Aside */
+  aside .content-wrapper {
+    justify-content: space-around;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 30%;
+  }
+
+  /* Features */
+
+  .features h2 {
+    width: 90%;
+  }
+
+  .features article {
+    flex-basis: 33%;
+  }
+
+  /* Reviews */
+  .reviews article div {
+    width: 42%;
+  }
+
+  /* About */
+  .mission h2,
+  .contact-section .content-wrapper {
+    width: 95%;
+  }
+
+  /* FAQ */
+  .faq h2 {
+    width: 100%;
+  }
 }
 
 /* ==========================================================================
