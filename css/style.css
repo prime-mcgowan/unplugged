@@ -95,6 +95,7 @@ body {
   color: #e2e3ed;
   font-family: "Open Sans", sans-serif;
   font-size: 1em;
+  text-align: left;
 }
 
 ul,
@@ -112,12 +113,15 @@ a {
 h2 {
   font-family: "Poppins", sans-serif;
   font-size: 1.8em;
+  font-weight: 500;
 }
 
 h3,
 h4 {
   font-family: "Poppins", sans-serif;
   font-size: 1.1em;
+  font-weight: 500;
+  margin: 20px 0;
 }
 
 p {
@@ -126,9 +130,11 @@ p {
 }
 
 img {
+  width: 100%;
 }
 
 figure {
+  margin: 0;
 }
 
 address {
@@ -144,6 +150,7 @@ address {
 /* -------- Base Header - Footer Style --------- */
 
 header {
+  background-color: #202322;
   display: flex;
   justify-content: center;
   padding: 15px 0;
@@ -157,13 +164,21 @@ header .content-wrapper {
   margin: 0;
 }
 
+.header-figure {
+  width: 60%;
+}
+
 .header-divider {
+  background-color: #3a3a3a;
   width: 100%;
   height: 1px;
   margin: 10px 0 20px 0;
 }
 
 header nav {
+  font-size: 1.2em;
+  font-weight: 700;
+  text-transform: uppercase;
   width: 60%;
 }
 
@@ -171,6 +186,10 @@ header nav ul {
   display: flex;
   justify-content: space-around;
   width: 100%;
+}
+
+header nav ul li {
+  font-size: 1.2em;
 }
 
 footer {
@@ -214,8 +233,19 @@ footer .copyright {
 /* Hero */
 
 .hero-area {
+  background: url("../img/unplugged-retreat.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
   display: flex;
   justify-content: center;
+}
+
+.hero-area h1 {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 2.2em;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
 /* Aside */
@@ -443,6 +473,10 @@ header .content-wrapper {
   justify-content: space-between;
 }
 
+header figure {
+  width: 30%;
+}
+
 header nav {
   width: 20%;
 }
@@ -456,6 +490,9 @@ header nav ul {
 }
 
 /* Hero area */
+.hero-area {
+  min-height: 600px;
+}
 
 /* Aside */
 aside .content-wrapper {
@@ -566,7 +603,9 @@ footer .copyright {
 
   /* Hero */
   .hero-area h1 {
+    font-size: 3.75em;
     width: 80%;
+    min-height: 500px;
   }
 
   /* Aside */
